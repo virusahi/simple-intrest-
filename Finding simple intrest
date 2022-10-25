@@ -1,0 +1,33 @@
+#include
+
+int calculate();
+
+int main()
+
+{
+
+ float si;
+
+ si=calculate();
+
+ printf(“The Simple Intrest of given data is %.2f”,si);
+
+ return 0;
+
+}
+
+int calculate()
+
+{
+
+ float principal, rate, time, si;
+
+ printf(“Enter the Principal, Rate and Amount Respectively:-\n”);
+
+ scanf(“%f%f%f”,&principal,&rate,&time);
+
+ si=(principal*rate*time)/100;
+
+ return si;
+
+}
